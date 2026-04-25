@@ -1,0 +1,49 @@
+name: update
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# GH_TOKEN is my own token that has permissions for dtomvan/nixpkgs,
+# and GITHUB_TOKEN is automatically generated and needed to push to this repo.
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 10
+
+    steps:
+      - name: configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global push.default simple
+
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - uses: wimpysworld/nothing-but-nix@v10
+        with:
+          hatchet-protocol: carve
+          
+      - uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GH_TOKEN }}
+          
+      - name: perform update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: nix run
+        
+      - name: push to this repo
+        run: |
+          branch="$(git branch --show-current)"
+          if [[ "$(git rev-list "origin/$branch..HEAD" --count)" -ne 0 ]]; then
+            git push --force-with-lease origin "$branch"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
