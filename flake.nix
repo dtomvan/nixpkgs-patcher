@@ -5,11 +5,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-patched.url = "github:dtomvan/nixpkgs/nixos-unstable-patched";
 
-    nixpkgs-patch-10 = {
-      url = "https://github.com/NixOS/nixpkgs/pull/512989.patch";
-      flake = false;
-    };
-
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
