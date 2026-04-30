@@ -32,7 +32,9 @@ jobs:
       - uses: cachix/install-nix-action@v31
         with:
           github_access_token: ${{ secrets.GH_TOKEN }}
-          
+
+      - run: nix flake update nixpkgs --commit-lock-file
+      
       - name: perform update
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
