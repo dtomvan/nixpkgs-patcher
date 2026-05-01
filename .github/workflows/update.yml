@@ -2,6 +2,8 @@ name: update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: 3 14 * * 6
 
 permissions:
   contents: write
