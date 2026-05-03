@@ -7,7 +7,7 @@
 
     # incus: 6.23.0 -> 7.0.0; incus-lts: 6.0.6-unstable-2026-03-27 -> 7.0.0
     nixpkgs-patch-10 = {
-      url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/515853.patch";
+      url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/515853.diff";
       flake = false;
     };
 
