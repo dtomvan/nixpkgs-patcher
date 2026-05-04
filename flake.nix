@@ -23,6 +23,18 @@
       flake = false;
     };
 
+    # lix_2_94: fix build
+    nixpkgs-patch-31 = {
+      url = "https://github.com/NixOS/nixpkgs/commit/978725b29ecb9438982f0a6da5617b99c39de7a4.patch"
+      flake = false;
+    };
+
+    # lix depends on this, required for caching
+    nixpkgs-patch-40 = {
+      url = "https://github.com/NixOS/nixpkgs/commit/c6d63f1ec80102dd3fa4122b31aa31005db43d25.patch";
+      flake = false;
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
