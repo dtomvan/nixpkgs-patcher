@@ -25,7 +25,7 @@
 
     # lix_2_94: fix build
     nixpkgs-patch-31 = {
-      url = "https://github.com/NixOS/nixpkgs/commit/978725b29ecb9438982f0a6da5617b99c39de7a4.patch"
+      url = "https://github.com/NixOS/nixpkgs/commit/978725b29ecb9438982f0a6da5617b99c39de7a4.patch";
       flake = false;
     };
 
