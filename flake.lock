@@ -93,6 +93,18 @@
         "url": "https://github.com/NixOS/nixpkgs/pull/516608.diff"
       }
     },
+    "nixpkgs-patch-30": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-B/jdjEF7nYWsxg1D9b/cShFdRyUCSWxJ9WxKAr65VsU=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/516590.diff"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/516590.diff"
+      }
+    },
     "nixpkgs-patched": {
       "locked": {
         "lastModified": 1777926674,
@@ -116,6 +128,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-patch-10": "nixpkgs-patch-10",
         "nixpkgs-patch-20": "nixpkgs-patch-20",
+        "nixpkgs-patch-30": "nixpkgs-patch-30",
         "nixpkgs-patched": "nixpkgs-patched",
         "systems": "systems"
       }
