@@ -11,6 +11,12 @@
       flake = false;
     };
 
+    # nix: 2.34.6 -> 2.34.7
+    nixpkgs-patch-20 = {
+      url = "https://github.com/NixOS/nixpkgs/pull/516608.diff";
+      flake = false;
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
