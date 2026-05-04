@@ -17,6 +17,12 @@
       flake = false;
     };
 
+    # lix_2_9{4,5}: 2.9{4,5}.1 -> 2.9{4,5}.2
+    nixpkgs-patch-30 = {
+      url = "https://github.com/NixOS/nixpkgs/pull/516590.diff";
+      flake = false;
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
