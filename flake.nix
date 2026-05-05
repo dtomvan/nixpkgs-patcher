@@ -7,31 +7,7 @@
 
     # incus: 6.23.0 -> 7.0.0; incus-lts: 6.0.6-unstable-2026-03-27 -> 7.0.0
     nixpkgs-patch-10 = {
-      url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/515853.diff";
-      flake = false;
-    };
-
-    # nix: 2.34.6 -> 2.34.7
-    nixpkgs-patch-20 = {
-      url = "https://github.com/NixOS/nixpkgs/pull/516608.diff";
-      flake = false;
-    };
-
-    # lix_2_9{4,5}: 2.9{4,5}.1 -> 2.9{4,5}.2
-    nixpkgs-patch-30 = {
-      url = "https://github.com/NixOS/nixpkgs/pull/516590.diff";
-      flake = false;
-    };
-
-    # lix_2_94: fix build
-    nixpkgs-patch-31 = {
-      url = "https://github.com/NixOS/nixpkgs/commit/978725b29ecb9438982f0a6da5617b99c39de7a4.patch";
-      flake = false;
-    };
-
-    # lix depends on this, required for caching
-    nixpkgs-patch-40 = {
-      url = "https://github.com/NixOS/nixpkgs/commit/c6d63f1ec80102dd3fa4122b31aa31005db43d25.patch";
+      url = "https://github.com/NixOS/nixpkgs/compare/nixos-unstable...dtomvan:nixpkgs:dtomvan/push-vpwntxvmyuwy.diff";
       flake = false;
     };
 
