@@ -69,18 +69,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-10": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-shcydaeguGjMilrsR8lUDtopcZd33y/vlI+4JFS8u7Q=",
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/compare/nixos-unstable...dtomvan:nixpkgs:dtomvan/push-vpwntxvmyuwy.diff"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/NixOS/nixpkgs/compare/nixos-unstable...dtomvan:nixpkgs:dtomvan/push-vpwntxvmyuwy.diff"
-      }
-    },
     "nixpkgs-patched": {
       "locked": {
         "lastModified": 1777996068,
@@ -102,7 +90,6 @@
         "flake-parts": "flake-parts",
         "nix-patcher": "nix-patcher",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-patch-10": "nixpkgs-patch-10",
         "nixpkgs-patched": "nixpkgs-patched",
         "systems": "systems"
       }

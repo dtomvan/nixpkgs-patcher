@@ -5,12 +5,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-patched.url = "github:dtomvan/nixpkgs/nixos-unstable-patched";
 
-    # incus: 6.23.0 -> 7.0.0; incus-lts: 6.0.6-unstable-2026-03-27 -> 7.0.0
-    nixpkgs-patch-10 = {
-      url = "https://github.com/NixOS/nixpkgs/compare/nixos-unstable...dtomvan:nixpkgs:dtomvan/push-vpwntxvmyuwy.diff";
-      flake = false;
-    };
-
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
