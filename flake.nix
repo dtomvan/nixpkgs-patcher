@@ -11,6 +11,12 @@
       flake = false;
     };
 
+    # linux_6_18: 6.18.30 -> 6.18.31
+    nixpkgs-patch-20 = {
+      url = "https://github.com/nixos/nixpkgs/commit/dd8d9f2d8a5efd08ada311f9a63f496244dd694b.patch";
+      flake = false;
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
