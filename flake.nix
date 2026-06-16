@@ -11,6 +11,12 @@
       flake = false;
     };
 
+    # nixos/forgejo-runner: init module
+    nixpkgs-patch-20 = {
+      url = "https://github.com/NixOS/nixpkgs/commit/48f87539d9cfc5ca4f7f6913dfcf51d24e849fcb.patch";
+      flake = false;
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
