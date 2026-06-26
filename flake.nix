@@ -13,7 +13,7 @@
 
     # nixos/forgejo-runner: init module
     nixpkgs-patch-20 = {
-      url = "https://github.com/NixOS/nixpkgs/commit/48f87539d9cfc5ca4f7f6913dfcf51d24e849fcb.patch";
+      url = "https://github.com/dtomvan/nixpkgs/commit/65a8490260cc280441bf69aea538723bb3a05ec4.patch";
       flake = false;
     };
 
