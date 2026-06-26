@@ -95,11 +95,11 @@
     },
     "nixpkgs-patched": {
       "locked": {
-        "lastModified": 1768758263,
-        "narHash": "sha256-47rwJhzRGnyrzM1xB6c0RG/6yrQMeTRxxnuTHJgB4cE=",
+        "lastModified": 1780941541,
+        "narHash": "sha256-p9qKWzxKgIe7A01Ydru+CiQCOdmutsDejAugkofp1XU=",
         "owner": "dtomvan",
         "repo": "nixpkgs",
-        "rev": "15e7a868d0ba6664fad77471193f8c7c4a371c98",
+        "rev": "c228f986de25b14aea3adbaa3c405eebe6470961",
         "type": "github"
       },
       "original": {
