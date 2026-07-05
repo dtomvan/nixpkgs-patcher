@@ -84,13 +84,13 @@
     "nixpkgs-patch-20": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-r1on/QLl8JFyWYR2c/4M7Syjz7HlwXmcQrh4/jaL10c=",
+        "narHash": "sha256-Q9KB1EU41LduQZnncuvDjgRn6aHMMQWQzGO81WMosY0=",
         "type": "file",
-        "url": "https://github.com/dtomvan/nixpkgs/commit/71d2e72670b54a19dba775e62e58dbae5c6a35d3.patch"
+        "url": "https://github.com/dtomvan/nixpkgs/commit/19815f326a6ef154e4b247abf6db29ed8582f2aa.patch"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/dtomvan/nixpkgs/commit/71d2e72670b54a19dba775e62e58dbae5c6a35d3.patch"
+        "url": "https://github.com/dtomvan/nixpkgs/commit/19815f326a6ef154e4b247abf6db29ed8582f2aa.patch"
       }
     },
     "nixpkgs-patched": {
