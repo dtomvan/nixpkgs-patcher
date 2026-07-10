@@ -5,15 +5,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-patched.url = "github:dtomvan/nixpkgs/nixos-unstable-patched";
 
-    # lib.filesystems: init listFilesRecursiveCond
-    nixpkgs-patch-10 = {
-      url = "https://github.com/dtomvan/nixpkgs/commit/1af0598daff7f663144defe209a776d1b4d178b4.patch";
-      flake = false;
-    };
-
     # nixos/forgejo-runner: init module
-    nixpkgs-patch-20 = {
-      url = "https://github.com/dtomvan/nixpkgs/commit/19815f326a6ef154e4b247abf6db29ed8582f2aa.patch";
+    nixpkgs-patch-10 = {
+      url = "https://github.com/dtomvan/nixpkgs/commit/7488a70e4a522236091ddf0d108ac0e7e6febfc0.patch";
       flake = false;
     };
 
