@@ -11,12 +11,6 @@
       flake = false;
     };
 
-    # matrix-continuwuity: 0.5.10 -> 26.6.0
-    nixpkgs-patch-20 = {
-      url = "https://github.com/nixos/nixpkgs/commit/59fe8116c3606fd4e50aa5dda343de448d134fb2.patch";
-      flake = false;
-    };
-
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {
