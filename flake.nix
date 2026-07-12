@@ -5,12 +5,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-patched.url = "github:dtomvan/nixpkgs/nixos-unstable-patched";
 
-    # nixos/forgejo-runner: init module
-    nixpkgs-patch-10 = {
-      url = "https://github.com/dtomvan/nixpkgs/commit/7488a70e4a522236091ddf0d108ac0e7e6febfc0.patch";
-      flake = false;
-    };
-
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
     nix-patcher = {

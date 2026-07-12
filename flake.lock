@@ -69,18 +69,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-patch-10": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-yMWfhiedIXS8KzzzUt13QRpKT9IXxJOxhvMiRGGk3C0=",
-        "type": "file",
-        "url": "https://github.com/dtomvan/nixpkgs/commit/7488a70e4a522236091ddf0d108ac0e7e6febfc0.patch"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/dtomvan/nixpkgs/commit/7488a70e4a522236091ddf0d108ac0e7e6febfc0.patch"
-      }
-    },
     "nixpkgs-patched": {
       "locked": {
         "lastModified": 1783704418,
@@ -102,7 +90,6 @@
         "flake-parts": "flake-parts",
         "nix-patcher": "nix-patcher",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-patch-10": "nixpkgs-patch-10",
         "nixpkgs-patched": "nixpkgs-patched",
         "systems": "systems"
       }
